@@ -9,17 +9,6 @@ This project aims to develop a Sign Language Interpreter using computer vision a
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Data Collection](#data-collection)
-  - [Dataset Creation](#dataset-creation)
-  - [Model Training](#model-training)
-  - [Model Inference](#model-inference)
-- [Project Structure](#project-structure)
-- [Code Explanation](#code-explanation)
-  - [collect_imgs.py](#collect_imgspy)
-  - [create_dataset.py](#create_datasetpy)
-  - [train_classifier.py](#train_classifierpy)
-  - [inference_classifier.py](#inference_classifierpy)
-- [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -51,10 +40,45 @@ The project requires the following libraries:
 - `sklearn`
   - `train_test_split`
   - `accuracy_score`
-
+  ```sh
+  pip install opencv-python numpy mediapipe matplotlib scikit-learn
+```
+```
 ## Installation
 
 1. Clone the repository:
    ```sh
    git clone https://github.com/Pratham6996/SignLanguageInterpreter.git
    cd SignLanguageInterpreter
+
+## Usage
+
+1. Use collect_imgs.py to capture sign language alphabet images
+```sh
+python collect_imgs.py
+```
+2.Convert the collected images into a dataset of hand coordinates using create_dataset.py
+```sh
+python create_dataset.py
+```
+3. Train the model using the created dataset with train_classifier.py
+```sh
+python train_classifier.py
+```
+4. Test the trained model using inference_classifier.py
+```sh
+python inference_classifier.py
+```
+
+## Contributing 
+
+Contributions are welcome! Please follow these steps to contribute:
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Commit your changes (git commit -am 'Add new feature').
+- Push to the branch (git push origin feature-branch).
+- Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](License) file for details.
