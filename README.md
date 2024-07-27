@@ -14,6 +14,12 @@ This project aims to develop a Sign Language Interpreter using computer vision a
   - [Model Training](#model-training)
   - [Model Inference](#model-inference)
 - [Project Structure](#project-structure)
+- [Code Explanation](#code-explanation)
+  - [collect_imgs.py](#collect_imgspy)
+  - [create_dataset.py](#create_datasetpy)
+  - [train_classifier.py](#train_classifierpy)
+  - [inference_classifier.py](#inference_classifierpy)
+- [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -25,12 +31,14 @@ The Sign Language Interpreter project involves:
 - Creating a dataset and training a RandomForestClassifier model.
 - Testing the trained model.
 
+The main goal is to facilitate communication for the deaf and hard-of-hearing community by interpreting sign language gestures into readable text.
+
 ## Features
 
-- Collect sign language alphabet data.
-- Create a dataset with hand coordinates.
-- Train a machine learning model.
-- Test the model to interpret sign language.
+- **Data Collection**: Capture images of sign language alphabets.
+- **Dataset Creation**: Convert images to hand coordinates arrays.
+- **Model Training**: Train a RandomForestClassifier model.
+- **Model Inference**: Test the trained model to interpret sign language.
 
 ## Requirements
 
